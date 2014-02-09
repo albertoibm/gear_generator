@@ -156,16 +156,7 @@ if gui:
 	if save:
 		name="Engrane-%d-%.3f.png"%(engrane.N,engrane.Pd)
 		print "Guardando imagen en",name
-		try:
-			from PIL import Image
-			img=Image.new("RGB",(Width,Height))
-			for y in range(Height):
-				for x in range(Width):
-					img.putpixel((x,y),screen.Screen.get_at((x,y))[:3])
-			img.save(name)
-			del(img)
-		except ImportError:
-			print "Error. No se pudo importar PIL"
+		pygame.image.save(screen.Screen,name)
 	while 1:
 		screen.actualizar()
 		screen.endloop()
