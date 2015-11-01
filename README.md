@@ -9,7 +9,7 @@ Example:
 
 It generates a gear with 10 teeth, 100 units diameter, animates it and prints out the list of points.
 
-There is a file named angle.py included which prints the angle of a given x,y point. In case you need the list of points of the gear in order.
+There is a file named `angle.py` included which prints the angle of a given x,y point. In case you need the list of points of the gear in order.
 
 To sort them up just use the next line
 
